@@ -35,7 +35,7 @@ transform: rotate(0deg);
     align-items: center;
     justify-content: space-between;
     background-color: #fff;
-    z-index: 20;
+    z-index: 2;
     flex-wrap: wrap;
 }
 .logo {
@@ -69,7 +69,6 @@ transform: rotate(0deg);
     position: absolute;
     top: 200px;
     left: 80px;
-    z-index: 20;
 }
 .hand {
     height: 50px;
@@ -113,7 +112,6 @@ transform: rotate(0deg);
     position: relative;
 }
 .projects {
-   width: 40px;
    height: 500px;
    background-color: #fff;
    margin: 20px;
