@@ -19,7 +19,9 @@
     animation: 10000ms linear 0s infinite normal none running rotation;
 }
 @keyframes rotation {
-    
+    0% {
+transform: rotate(0deg);
+    }
     100% {
         transform: rotate(360deg);
     }
@@ -28,11 +30,12 @@
     width: 100%;
     height: 80px;
     position: fixed;
+    top: 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
     background-color: #fff;
-    z-index: 100;
+    z-index: 20;
     flex-wrap: wrap;
 }
 .logo {
@@ -45,7 +48,7 @@
 .menu a {
     margin-right: 80px;
     color: #000;
-    font-size: 1em;
+    font-size: 16px;
     font-weight: 400;
     position: relative;
 }
@@ -64,8 +67,9 @@
 }
 .main-text {
     position: absolute;
-    top: 30%;
-    left: 8%;
+    top: 200px;
+    left: 80px;
+    z-index: 20;
 }
 .hand {
     height: 50px;
@@ -83,20 +87,20 @@
     40% { transform: rotate(  15.0deg); }
     50% { transform: rotate(  0.0deg); }
    100% { transform: rotate(  0.0deg); }
-    
+
 }
 .main {
-    font-size: 3.3em;
+    font-size: 55px;
     line-height: 80px;
 }
 .project-text {
     width: 100%;
     text-align: center;
     position: absolute;
-    top: 90%;
+    top: 640px;
 }
 .project-text h5,p {
-    font-size: 1.2em;
+    font-size: 20px;
     padding: 5px;
     opacity: 0.8;
 }
@@ -106,38 +110,40 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 .projects {
-   height: 70vh;
-   width: 100%;
+   width: 40px;
+   height: 500px;
    background-color: #fff;
-   margin: 10px;
+   margin: 20px;
+   flex: 0 0 42%;
    border-radius: 30px;
    position: relative;
 }
 .innner-text {
     position: absolute;
     top: 30px;
-    left: 18px;
+    left: 15px;
 }
 .spann {
     color: white;
     margin-bottom: 100px;
-    font-size: 0.9em;
+    font-size: 14px;
     font-weight: 600;
 }
 .spannn {
     color: #000;
-    font-size: 0.9em;
+    font-size: 14px;
     font-weight: 600;
 }
 .h3 {
     color: white;
-    font-size: 0.9em;
+    font-size: 20px;
     margin-top: 13px;
 }
 .h32 {
-    font-size: 1.1em;
+    font-size: 20px;
     margin-top: 13px;
 }
 .innner-text button {
@@ -174,7 +180,7 @@
 .about {
     width: 80%;
     height: 70vh;
-    margin: 150px 0 90px 90px;
+    margin: 150px 0 0 90px;
 }
 .about h5 {
     font-size: 16px;
@@ -189,7 +195,6 @@
 }
 .about p a,span {
     color: #1de400;
-    text-decoration: none;
 }
 .about p a:hover {
     text-decoration: underline;
@@ -205,7 +210,6 @@
 .tech-2 {
     display: flex;
     text-align: center;
-    flex-wrap: wrap;
 }
 .stack {
     margin: 40px 60px;
@@ -213,7 +217,7 @@
 .work-stack {
     margin-left: 50px;
     text-transform: uppercase;
-    font-size: 1em;
+    font-size: 16px;
 }
 .design-text {
     width: 40%;
