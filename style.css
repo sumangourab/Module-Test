@@ -4,7 +4,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
-    overflow: hidden;
 }
 .container {
     width: 100%;
@@ -20,9 +19,7 @@
     animation: 10000ms linear 0s infinite normal none running rotation;
 }
 @keyframes rotation {
-    0% {
-transform: rotate(0deg);
-    }
+    
     100% {
         transform: rotate(360deg);
     }
@@ -112,9 +109,9 @@ transform: rotate(0deg);
 }
 .projects {
    height: 70vh;
+   width: 100%;
    background-color: #fff;
-   margin: 20px;
-   flex: 0 0 42%;
+   margin: 10px;
    border-radius: 30px;
    position: relative;
 }
@@ -192,6 +189,7 @@ transform: rotate(0deg);
 }
 .about p a,span {
     color: #1de400;
+    text-decoration: none;
 }
 .about p a:hover {
     text-decoration: underline;
@@ -207,6 +205,7 @@ transform: rotate(0deg);
 .tech-2 {
     display: flex;
     text-align: center;
+    flex-wrap: wrap;
 }
 .stack {
     margin: 40px 60px;
